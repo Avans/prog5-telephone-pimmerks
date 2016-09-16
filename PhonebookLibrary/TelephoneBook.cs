@@ -12,7 +12,7 @@ namespace PhonebookLibrary
 
 		public TelephoneBook()
 		{
-
+			PersonList = new List<Person>();
 		}
 
 		public List<Person> SortOnLastName()
@@ -32,8 +32,7 @@ namespace PhonebookLibrary
 			var result = PersonList.Where(p => p.LastName.Length > length);
 			return result.ToList();
 		}
-
-		public List<Person> 
+		
 
 
 	}
